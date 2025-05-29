@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #4378c9;
+    color: white;
+    padding: 24px 0;
+    text-align: center;
+}
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    background: white;
+    padding: 32px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    border-radius: 12px;
+}
+section {
+    margin-bottom: 30px;
+}
+h2 {
+    color: #2d4a8a;
+}
+ul {
+    margin-left: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+input, textarea {
+    padding: 8px;
+    border: 1px solid #b5c3d1;
+    border-radius: 4px;
+    font-size: 1em;
+}
+button {
+    background: #4378c9;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.15s;
+}
+button:hover, button.active {
+    background: #2d4a8a;
+}
+#opinions {
+    margin-top: 10px;
+}
+.opinion-entry {
+    background: #e6eefe;
+    border-left: 4px solid #2d4a8a;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+footer {
+    text-align: center;
+    color: #777;
+    margin: 30px 0 10px 0;
+    font-size: 0.95em;
+}
+
+/* 동적 버튼 및 이미지 스타일 */
+.gene-methods {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+.method-btn {
+    flex: 1 1 0;
+    min-width: 120px;
+}
+.method-description {
+    min-height: 44px;
+    margin-top: 5px;
+    padding-left: 4px;
+    color: #224c7c;
+    font-size: 1.05em;
+}
+.research-trends {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+.trend-btn {
+    background: #f3f6fb;
+    border: 1.5px solid #b5c3d1;
+    border-radius: 6px;
+    padding: 6px 10px 4px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+    cursor: pointer;
+    transition: border 0.14s, background 0.14s;
+}
+.trend-btn img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+.trend-btn span {
+    margin-top: 2px;
+    color: #2d4a8a;
+    font-size: 0.98em;
+    font-weight: 500;
+}
+.trend-btn:hover, .trend-btn.active {
+    border: 2px solid #4378c9;
+    background: #e6eefe;
+}
+.trend-description {
+    min-height: 48px;
+    padding-left: 4px;
+    color: #224c7c;
+    font-size: 1.06em;
+}
+@media (max-width: 600px) {
+    main { max-width: 97vw; padding: 14px 2vw 18px 2vw;}
+    .gene-methods, .research-trends { flex-direction: column; gap: 10px;}
+}
